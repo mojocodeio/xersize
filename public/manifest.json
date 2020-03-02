@@ -16,5 +16,6 @@
   },
   "content_security_policy": "script-src 'self' 'sha256-9xKIjaJBg95C9/tLBYu8XZLlwTAfHN14u4moMtg+VCo='; object-src 'self'",
   "permissions": [
+    "identity"
   ]
 }

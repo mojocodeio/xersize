@@ -14,6 +14,12 @@
     "48": "logo192.png",
     "128": "logo192.png"
   },
+  "oauth2": {
+    "client_id": "431943646223-gm4r1jb84ht06bd4vqu71ij8klfh8oel.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive"
+    ]
+  },
   "content_security_policy": "script-src 'self' 'sha256-9xKIjaJBg95C9/tLBYu8XZLlwTAfHN14u4moMtg+VCo='; object-src 'self'",
   "permissions": [
     "identity"

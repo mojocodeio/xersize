@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import styles from './App.module.css';
+
+export const App = () => {
+  const [isCool, setCoolness] = useState(false)
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {isCool ? 'I am cool' : 'I am not quite cool yet'}
         </p>
         <a
           className="App-link"
@@ -18,6 +21,12 @@ function App() {
         >
           Learn React
         </a>
+        <button
+          onClick={() => setCoolness(!isCool)}
+          className={isCool ? styles.cool : styles.uncool}
+        >
+          Click Me!
+        </button>
       </header>
     </div>
   );

@@ -4,10 +4,13 @@
   "name": "Xersize",
   "description": "This extension can be used as a reminder to exersize daily",
   "version": "0.0.1",
-
   "browser_action": {
     "default_popup": "index.html",
     "default_title": "Open Xersize"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "icons": {
     "16": "logo192.png",
@@ -22,6 +25,7 @@
   },
   "content_security_policy": "script-src 'self' 'sha256-9xKIjaJBg95C9/tLBYu8XZLlwTAfHN14u4moMtg+VCo='; object-src 'self'",
   "permissions": [
-    "identity"
+    "identity",
+    "activeTab"
   ]
 }
